@@ -70,7 +70,7 @@ func templatesAsInput(tpl... string) (yttcmd.Input, error) {
 	for i, t := range tpl {
 		// to make this less brittle, you'll probably want to use well-defined names for `path`, here, for each input.
 		// this matters when you're processing errors which report based on these paths.
-		file, err := yttfiles.NewFileFromSource(yttfiles.NewBytesSource(fmt.Sprintf("tpl%d.yml", i), []byte(t)))
+		file, err := yttfiles.NewFileFromSource(yttfiles.NewBytesSource(fmt.Sprintf("C:\\Users\\user\\Desktop\\tpl%d.yml", i), []byte(t)))
 		if err != nil {
 			return yttcmd.Input{}, err
 		}
