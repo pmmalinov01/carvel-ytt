@@ -20,4 +20,5 @@ ytt version
 # We only care about exit code
 ytt -f examples\load-paths
 
-( cd examples/integrating-with-ytt/internal-templating && go test ./... )
+cd examples/integrating-with-ytt/internal-templating
+go test ./...
